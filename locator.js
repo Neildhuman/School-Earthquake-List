@@ -15,7 +15,6 @@ function initMap() {
     const schoolCoordinates = {
         'Kataasan Elementary School': [14.87138563833667, 120.46311702132928],
         'Luacan Elementary School': [14.864871, 120.448727],
-        'Saguing Elementary School': [14.861774, 120.440554],
         'San Ramon Elementary School': [14.869406, 120.462788],
         'Dinalupihan Elementary School': [14.868442, 120.469059],
         'Dalao Elementary School': [14.896644398038891, 120.44886918249934],
@@ -27,6 +26,28 @@ function initMap() {
         'Daang Bago Elementary School': [14.857376631882765, 120.4796381799686],
         'Bayan-Bayanan Elementary School': [14.89127025450671, 120.43524969215159],
         'Bangal Elementary School': [14.845210944268672, 120.34011573870171],
+
+
+
+        'Maligaya Elementary School': [14.862531, 120.426610],
+        'Naparing Elementary School': [14.846096, 120.407032],
+        'Pag-Asa Elementary School': [14.85058, 120.41955],
+        'Payangan Elementary School': [14.862813, 120.378695],
+        'Pentor Elementary School': [14.87095, 120.47380],
+        'Pinulot Elementary School': [14.849964, 120.389756],
+        'Saguing Elementary School': [14.861774, 120.440554],
+
+
+        'San Benito Elementary School': [14.847941, 120.424810],
+        'San Simon Elementary School': [14.913620, 120.478486],
+        'San Pablo Elementary School': [14.852609, 120.378833],
+        'Sapang Balas Elementary School': [14.885716, 120.446960],
+        'Santa Isabel Elementary School': [14.860015, 120.471733],
+        'Santo Nino Elementary School': [14.876524, 120.458879],
+        'Tucop Integrated School': [14.897273, 120.472482],
+        'Tubo-Tubo Integrated School': [14.860007, 120.408932],
+
+
     };
 
     for (const schoolName in schoolCoordinates) {
@@ -47,7 +68,6 @@ function locateSchool(schoolName) {
     const schoolCoordinates = {
         'Kataasan Elementary School': [14.87138563833667, 120.46311702132928],
         'Luacan Elementary School': [14.864871, 120.448727],
-        'Saguing Elementary School': [14.861774, 120.440554],
         'San Ramon Elementary School': [14.869406, 120.462788],
         'Dinalupihan Elementary School': [14.868442, 120.469059],
         'Dalao Elementary School': [14.896644398038891, 120.44886918249934],
@@ -59,6 +79,24 @@ function locateSchool(schoolName) {
         'Daang Bago Elementary School': [14.857376631882765, 120.4796381799686],
         'Bayan-Bayanan Elementary School': [14.89127025450671, 120.43524969215159],
         'Bangal Elementary School': [14.845210944268672, 120.34011573870171],
+
+        'Maligaya Elementary School': [14.862531, 120.426610],
+        'Naparing Elementary School': [14.846096, 120.407032],
+        'Pag-Asa Elementary School': [14.85058, 120.41955],
+        'Payangan Elementary School': [14.862813, 120.378695],
+        'Pentor Elementary School': [14.87095, 120.47380],
+        'Pinulot Elementary School': [14.849964, 120.389756],
+        'Saguing Elementary School': [14.861774, 120.440554],
+
+
+        'San Benito Elementary School': [14.847941, 120.424810],
+        'San Simon Elementary School': [14.913620, 120.478486],
+        'San Pablo Elementary School': [14.852609, 120.378833],
+        'Sapang Balas Elementary School': [14.885716, 120.446960],
+        'Santa Isabel Elementary School': [14.860015, 120.471733],
+        'Santo Nino Elementary School': [14.876524, 120.458879],
+        'Tucop Integrated School': [14.897273, 120.472482],
+        'Tubo-Tubo Integrated School': [14.860007, 120.408932],
     };
 
     const schoolDetails = {
@@ -72,28 +110,7 @@ function locateSchool(schoolName) {
                 { type: 'Moderately Susceptible', count: 2 },
                 { type: 'Low Susceptible', count: 3 }
             ],
-            buildings: [
-                { id: 'Building 1', rvs: 2, hazardLevel: 'HIGH' },
-                { id: 'Building 2', rvs: 3.1, hazardLevel: 'LOW' },
-                { id: 'Building 3', rvs: 0.2, hazardLevel: 'HIGH' },
-                { id: 'Building 4', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'Building 5', rvs: 2.3, hazardLevel: 'MEDIUM' },
-                { id: 'Building 6', rvs: 2, hazardLevel: 'HIGH' },
-                { id: 'Building 7', rvs: 1, hazardLevel: 'HIGH' },
-                { id: 'Building 8', rvs: 0.5, hazardLevel: 'HIGH' },
-                { id: 'Building 9', rvs: 3, hazardLevel: 'LOW' },
-                { id: 'Building 10', rvs: 1.1, hazardLevel: 'HIGH' },
-                { id: 'Building 11', rvs: 1.2, hazardLevel: 'HIGH' },
-                { id: 'Building 12', rvs: 1.3, hazardLevel: 'HIGH' },
-                { id: 'Building 13', rvs: 1.4, hazardLevel: 'HIGH' },
-                { id: 'Building 14', rvs: 1.5, hazardLevel: 'HIGH' },
-                { id: 'Building 15', rvs: 1.6, hazardLevel: 'HIGH' },
-                { id: 'Building 16', rvs: 1.7, hazardLevel: 'HIGH' },
-                { id: 'Building 17', rvs: 1.8, hazardLevel: 'HIGH' },
-                { id: 'Building 18', rvs: 1.9, hazardLevel: 'HIGH' },
-                { id: 'Building 19', rvs: 2, hazardLevel: 'HIGH' },
-                { id: 'Building 20', rvs: 2.1, hazardLevel: 'MEDIUM' }
-            ]
+            image: './iimg/schools/Kataasan ES-Model.png'
         },
         'Luacan Elementary School': {
             name: 'Luacan Elementary School',
@@ -105,30 +122,20 @@ function locateSchool(schoolName) {
                 { type: 'Moderately Susceptible', count: 2 },
                 { type: 'Low Susceptible', count: 3 }
             ],
-            buildings: [
-                { id: 'Building 1', rvs: 2, hazardLevel: 'HIGH' },
-                { id: 'Building 2', rvs: 3.1, hazardLevel: 'LOW' },
-                { id: 'Building 3', rvs: 0.2, hazardLevel: 'HIGH' },
-                { id: 'Building 4', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'Building 5', rvs: 2.3, hazardLevel: 'MEDIUM' },
-                { id: 'Building 6', rvs: 2, hazardLevel: 'HIGH' },
-                { id: 'Building 7', rvs: 1, hazardLevel: 'HIGH' },
-                { id: 'Building 8', rvs: 0.5, hazardLevel: 'HIGH' },
-                { id: 'Building 9', rvs: 3, hazardLevel: 'LOW' },
-                { id: 'Building 10', rvs: 1.1, hazardLevel: 'HIGH' },
-                { id: 'Building 11', rvs: 1.2, hazardLevel: 'HIGH' },
-                { id: 'Building 12', rvs: 1.3, hazardLevel: 'HIGH' },
-                { id: 'Building 13', rvs: 1.4, hazardLevel: 'HIGH' },
-                { id: 'Building 14', rvs: 1.5, hazardLevel: 'HIGH' },
-                { id: 'Building 15', rvs: 1.6, hazardLevel: 'HIGH' },
-                { id: 'Building 16', rvs: 1.7, hazardLevel: 'HIGH' },
-                { id: 'Building 17', rvs: 1.8, hazardLevel: 'HIGH' },
-                { id: 'Building 18', rvs: 1.9, hazardLevel: 'HIGH' },
-                { id: 'Building 19', rvs: 2, hazardLevel: 'HIGH' },
-                { id: 'Building 20', rvs: 2.1, hazardLevel: 'MEDIUM' }
-            ]
+            image: './iimg/schools/Luacan or Luakan ES-Model.png'
         },
-        'Saguing Elementary School': { /* Add relevant details */ },
+        'Saguing Elementary School': { 
+            name: 'Saguing Elementary School',
+            distanceFromNearestFault: 'Approximately 43.1 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 73.2 km',
+            numberOfBuildings: 7,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 1 },
+                { type: 'Moderately Susceptible', count: 0 },
+                { type: 'Low Susceptible', count: 6 }
+            ],
+            image: './iimg/schools/Saguing ES-Model.png'
+        },
         'San Ramon Elementary School': { /* Add relevant details */ },
         'Dinalupihan Elementary School': { 
             name: 'Dinalupihan Elementary School',
@@ -140,30 +147,7 @@ function locateSchool(schoolName) {
                 { type: 'Moderately Susceptible', count: 8 },
                 { type: 'Low Susceptible', count: 4 }
             ],
-            buildings: [
-                { id: 'CAB TYPE BLDG', rvs: 1.1, hazardLevel: 'HIGH' },
-                { id: 'FVR TYPE BLDG', rvs: 2.3, hazardLevel: 'MEDIUM' },
-                { id: 'US AID TYPE BLDG', rvs: 2.8, hazardLevel: 'MEDIUM' },
-                { id: 'PR-CHINESE TYPE BLDG 4', rvs: 0.5, hazardLevel: 'HIGH' },
-                { id: 'FFCCCI BLDG TYPE (5)', rvs: 2.8, hazardLevel: 'MEDIUM' },
-                { id: 'PPP TYPE BLDG', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'SPECIAL BLDG TYPE', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'CAB TPYE BLDG 3', rvs: 1.1, hazardLevel: 'HIGH' },
-                { id: 'TET GARCIA BLDG', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'CAB TPYE BLDG 3', rvs: 2.8, hazardLevel: 'MEDIUM' },
-                { id: 'GERMAN GRANT BLDG', rvs: 0.6, hazardLevel: 'HIGH' },
-                { id: 'GERMAN GRANT BLDG (12)', rvs: 2.3, hazardLevel: 'MEDIUM' },
-                { id: 'MARCOS TYPE BLDG (13)', rvs: 2.8, hazardLevel: 'MEDIUM' },
-                { id: 'MARCOS TYPE BLDG (14)', rvs: 1, hazardLevel: 'HIGH' },
-                { id: 'ESP TYPE BLDG (15)', rvs: 1, hazardLevel: 'HIGH' },
-                { id: 'GERMAN GRANT BLDG (16)', rvs: 1.1, hazardLevel: 'HIGH' },
-                { id: 'SPECIAL BLDG TYPE (17)', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BUILDING 18 - BAYANIHAN BLDG', rvs: 0.6, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 19 - ALS BLDG', rvs: 2.8, hazardLevel: 'MEDIUM' },
-                { id: 'BUILDING 20 - SPECIAL BLDG TYPE', rvs: 2.8, hazardLevel: 'MEDIUM' },
-                { id: 'BLDG 21 - US AID TYPE #2', rvs: 1, hazardLevel: 'HIGH' }
-
-            ]
+            image: './iimg/schools/Dinalupihan ES-Model.png'
         },
         'Dalao Elementary School': {
             name: 'Dalao Elementary School',
@@ -175,14 +159,7 @@ function locateSchool(schoolName) {
                 { type: 'Moderately Susceptible', count: 0 },
                 { type: 'Low Susceptible', count: 5 }
             ],
-            buildings: [
-                { id: 'BUILDING 1', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BUILDING 2', rvs: 1.5, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 3', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BUILDING 4', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BUILDING 6', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BUILDING 7', rvs: 3.4, hazardLevel: 'LOW' }
-            ]
+            image: './iimg/schools/Dalao ES-Model.png'
         },
         'Happy Valley Elementary School': {
             name: 'Happy Valley Elementary School',
@@ -194,13 +171,7 @@ function locateSchool(schoolName) {
                 { type: 'Moderately Susceptible', count: 1 },
                 { type: 'Low Susceptible', count: 2 }
             ],
-            buildings: [
-                { id: 'Building 1', rvs: 0.9, hazardLevel: 'HIGH' },
-                { id: 'Building 2', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'Building 3', rvs: 1.5, hazardLevel: 'HIGH' },
-                { id: 'Building 4', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'Building 5', rvs: 2.8, hazardLevel: 'MEDIUM' }
-            ]
+            image: './iimg/schools/Happy Valley ES-Model.png'
         },
         'Colo Elementary School': {
             name: 'Colo Valley Elementary School',
@@ -212,17 +183,7 @@ function locateSchool(schoolName) {
                 { type: 'Moderately Susceptible', count: 2 },
                 { type: 'Low Susceptible', count: 3 }
             ],
-            buildings: [
-                { id: 'BUILDING 1', rvs: 2.8, hazardLevel: 'MEDIUM' },
-                { id: 'BUILDING 16', rvs: 2.8, hazardLevel: 'MEDIUM' },
-                { id: 'BUILDING 12', rvs: 1.5, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 17', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BUILDING 10', rvs: 1.5, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 9', rvs: 1.5, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 6', rvs: 1.5, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 5', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BUILDING 14', rvs: 3.4, hazardLevel: 'LOW' }
-            ]
+            image: './iimg/schools/Colo ES-Model.png'
         },
         'Layac Elementary School': { 
             name: 'Layac Elementary School',
@@ -234,12 +195,7 @@ function locateSchool(schoolName) {
                 { type: 'Moderately Susceptible', count: 2 },
                 { type: 'Low Susceptible', count: 1 }
             ],
-            buildings: [
-                { id: 'BLDG 4', rvs: 1.5, hazardLevel: 'HIGH' },
-                { id: 'BLDG 3', rvs: 2.3, hazardLevel: 'MEDIUM' },
-                { id: 'BLDG 1', rvs: 2.8, hazardLevel: 'MEDIUM' },
-                { id: 'BLDG 2', rvs: 3.4, hazardLevel: 'LOW' },
-            ]
+            image: './iimg/schools/Layac ES-Model.png'
         },
         'Magsaysay Elementary School': {
             name: 'Magsaysay Elementary School',
@@ -251,28 +207,7 @@ function locateSchool(schoolName) {
                 { type: 'Moderately Susceptible', count: 2 },
                 { type: 'Low Susceptible', count: 3 }
             ],
-            buildings: [
-                { id: 'BUILDING 1', rvs: 2, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 2', rvs: 3.1, hazardLevel: 'LOW' },
-                { id: 'BUILDING 3', rvs: 0.2, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 4', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BUILDING 5', rvs: 2.3, hazardLevel: 'MEDIUM' },
-                { id: 'BUILDING 6', rvs: 2, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 7', rvs: 1, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 8', rvs: 0.5, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 9', rvs: 3, hazardLevel: 'LOW' },
-                { id: 'BUILDING 10', rvs: 1.1, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 11', rvs: 1.2, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 12', rvs: 1.3, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 13', rvs: 1.4, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 14', rvs: 1.5, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 15', rvs: 1.6, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 16', rvs: 1.7, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 17', rvs: 1.8, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 18', rvs: 1.9, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 19', rvs: 2, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 20', rvs: 2.1, hazardLevel: 'MEDIUM' }
-            ]
+            image: './iimg/schools/Magsaysay ES-Model.png'
         },
         'Jose C. Payumo Elementary School': { 
             name: 'Jose C. Payumo Elementary School',
@@ -284,19 +219,7 @@ function locateSchool(schoolName) {
                 { type: 'Moderately Susceptible', count: 1 },
                 { type: 'Low Susceptible', count: 9 }
             ],
-            buildings: [
-                { id: 'BUILDING 1', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BUILDING 2', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BUILDING 3', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BUILDING 10', rvs: 2.8, hazardLevel: 'MEDIUM' },
-                { id: 'PRE-ELEM BLDG', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BLDG 4', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BLDG 5', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BLDG 6', rvs: 3.5, hazardLevel: 'LOW' },
-                { id: 'BLDG 9', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BLDG 8', rvs: 1.5, hazardLevel: 'HIGH' },
-                { id: 'BLDG 7', rvs: 3.4, hazardLevel: 'LOW' },
-            ]
+            image: './iimg/schools/JC Payumo ES-Model.png'
         },
         'Daang Bago Elementary School': {
             name: 'Daang Bago Elementary School',
@@ -308,28 +231,7 @@ function locateSchool(schoolName) {
                 { type: 'Moderately Susceptible', count: 2 },
                 { type: 'Low Susceptible', count: 3 }
             ],
-            buildings: [
-                { id: 'BUILDING 1', rvs: 2, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 2', rvs: 3.1, hazardLevel: 'LOW' },
-                { id: 'BUILDING 3', rvs: 0.2, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 4', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BUILDING 5', rvs: 2.3, hazardLevel: 'MEDIUM' },
-                { id: 'BUILDING 6', rvs: 2, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 7', rvs: 1, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 8', rvs: 0.5, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 9', rvs: 3, hazardLevel: 'LOW' },
-                { id: 'BUILDING 10', rvs: 1.1, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 11', rvs: 1.2, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 12', rvs: 1.3, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 13', rvs: 1.4, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 14', rvs: 1.5, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 15', rvs: 1.6, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 16', rvs: 1.7, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 17', rvs: 1.8, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 18', rvs: 1.9, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 19', rvs: 2, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 20', rvs: 2.1, hazardLevel: 'MEDIUM' }
-            ]
+            image: './iimg/schools/Daang Bago ES-Model.png'
         },
         'Bayan-Bayanan Elementary School': {
             name: 'Bayan-Bayanan Elementary School',
@@ -341,11 +243,7 @@ function locateSchool(schoolName) {
                 { type: 'Moderately Susceptible', count: 2 },
                 { type: 'Low Susceptible', count: 1 }
             ],
-            buildings: [
-                { id: 'BUILDING 1', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BUILDING 2', rvs: 2.9, hazardLevel: 'MEDIUM' },
-                { id: 'BUILDING 3', rvs: 2.9, hazardLevel: 'MEDIUM' },
-            ]
+            image: './iimg/schools/bayan bayanan-Model.png'
         },
         'Bangal Elementary School': {
             name: 'Bangal Elementary School',
@@ -357,29 +255,199 @@ function locateSchool(schoolName) {
                 { type: 'Moderately Susceptible', count: 2 },
                 { type: 'Low Susceptible', count: 3 }
             ],
-            buildings: [
-                { id: 'BUILDING 1', rvs: 2, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 2', rvs: 3.1, hazardLevel: 'LOW' },
-                { id: 'BUILDING 3', rvs: 0.2, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 4', rvs: 3.4, hazardLevel: 'LOW' },
-                { id: 'BUILDING 5', rvs: 2.3, hazardLevel: 'MEDIUM' },
-                { id: 'BUILDING 6', rvs: 2, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 7', rvs: 1, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 8', rvs: 0.5, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 9', rvs: 3, hazardLevel: 'LOW' },
-                { id: 'BUILDING 10', rvs: 1.1, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 11', rvs: 1.2, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 12', rvs: 1.3, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 13', rvs: 1.4, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 14', rvs: 1.5, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 15', rvs: 1.6, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 16', rvs: 1.7, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 17', rvs: 1.8, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 18', rvs: 1.9, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 19', rvs: 2, hazardLevel: 'HIGH' },
-                { id: 'BUILDING 20', rvs: 2.1, hazardLevel: 'MEDIUM' }
-            ]
+            image: './iimg/schools/Bangal ES-Model.png'
         },
+        'Maligaya Elementary School': {
+            name: 'Maligaya Elementary School',
+            distanceFromNearestFault: 'Approximately 42.2 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 74.7 km',
+            numberOfBuildings: 5,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 1 },
+                { type: 'Moderately Susceptible', count: 0 },
+                { type: 'Low Susceptible', count: 4 }
+            ],
+            image: './iimg/schools/Maligaya ES-Model.png'
+        },
+        'Naparing Elementary School': {
+            name: 'Naparing Elementary School',
+            distanceFromNearestFault: 'Approximately 42.8 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 76.1 km',
+            numberOfBuildings: 7,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 0 },
+                { type: 'Moderately Susceptible', count: 4 },
+                { type: 'Low Susceptible', count: 3 }
+            ],
+            image: './iimg/schools/Naparing ES-Model.png'
+        },
+        'Pag-asa Elementary School': {
+            name: 'Pag-asa Elementary School',
+            distanceFromNearestFault: 'Approximately 42.6 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 74.9 km',
+            numberOfBuildings: 6,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 0 },
+                { type: 'Moderately Susceptible', count: 1 },
+                { type: 'Low Susceptible', count: 5 }
+            ],
+            image: './iimg/schools/Pag-asa ES.png'
+        },
+        'Payangan Elementary School': {
+            name: 'Payangan Elementary School',
+            distanceFromNearestFault: 'Approximately 39.7 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 79.5 km',
+            numberOfBuildings: 3,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 0 },
+                { type: 'Moderately Susceptible', count: 0 },
+                { type: 'Low Susceptible', count: 3 }
+            ],
+            image: './iimg/schools/Payangan ES-Model.png'
+        },
+        'Pentor Elementary School': {
+            name: 'Pentor Elementary School',
+            distanceFromNearestFault: 'Approximately 44.5 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 70.2 km',
+            numberOfBuildings: 2,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 0 },
+                { type: 'Moderately Susceptible', count: 1 },
+                { type: 'Low Susceptible', count: 1 }
+            ],
+            image: './iimg/schools/Bangal ES-Model.png'
+        },
+        'Pinulot Elementary School': {
+            name: 'Pinulot Elementary School',
+            distanceFromNearestFault: 'Approximately 40.1 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 78 km',
+            numberOfBuildings: 12,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 1 },
+                { type: 'Moderately Susceptible', count: 4 },
+                { type: 'Low Susceptible', count: 7 }
+            ],
+            image: './iimg/schools/Pinulot ES-Model.png'
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        'San Benito Elementary School': {
+            name: 'San Benito Elementary School',
+            distanceFromNearestFault: 'Approximately 43.5 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 74.3 km',
+            numberOfBuildings: 7,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 6 },
+                { type: 'Moderately Susceptible', count: 1 },
+                { type: 'Low Susceptible', count: 0 }
+            ],
+            image: './iimg/schools/San Benito ES-Model.png'
+        },
+        'San Pablo Elementary School': {
+            name: 'San Pablo Elementary School',
+            distanceFromNearestFault: 'Approximately 40.8 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 79.1 km',
+            numberOfBuildings: 11,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 1 },
+                { type: 'Moderately Susceptible', count: 3 },
+                { type: 'Low Susceptible', count: 7 }
+            ],
+            image: './iimg/schools/San Pablo-Model.png'
+        },
+        'San Simon Elementary School': {
+            name: 'San Simon Elementary School',
+            distanceFromNearestFault: 'Approximately 41 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 71.5 km',
+            numberOfBuildings: 6,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 0 },
+                { type: 'Moderately Susceptible', count: 2 },
+                { type: 'Low Susceptible', count: 4 }
+            ],
+            image: './iimg/schools/San Simon ES-Model.png'
+        },
+        'Sapang Balas Elementary School': {
+            name: 'Sapang Balas Elementary School',
+            distanceFromNearestFault: 'Approximately 41.3 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 73.5 km',
+            numberOfBuildings: 4,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 0 },
+                { type: 'Moderately Susceptible', count: 2 },
+                { type: 'Low Susceptible', count: 2 }
+            ],
+            image: './iimg/schools/SAPANG BALAS ES-Model.png'
+        },
+        'Santa Isabel Elementary School': {
+            name: 'Santa Isabel Elementary School',
+            distanceFromNearestFault: 'Approximately 45.1 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 70 km',
+            numberOfBuildings: 5,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 0 },
+                { type: 'Moderately Susceptible', count: 5 },
+                { type: 'Low Susceptible', count: 2 }
+            ],
+            image: './iimg/schools/Sta.Isabel ES-Model.png'
+        },
+        'Santo Nino Elementary School': {
+            name: 'Santo Nino Elementary School',
+            distanceFromNearestFault: 'Approximately 42.9 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 71.9 km',
+            numberOfBuildings: 2,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 1 },
+                { type: 'Moderately Susceptible', count: 1 },
+                { type: 'Low Susceptible', count: 0 }
+            ],
+            image: './iimg/schools/STO.NINO-Model.png'
+        },
+        'Tubo-Tubo Integrated School': {
+            name: 'Tubo-Tubo Integrated School',
+            distanceFromNearestFault: 'Approximately 41.5 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 76.3 km',
+            numberOfBuildings: 6,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 0 },
+                { type: 'Moderately Susceptible', count: 2 },
+                { type: 'Low Susceptible', count: 4 }
+            ],
+            image: './iimg/schools/Tubo-Tubo Es-Model.png'
+        },
+        'Tucop Integrated School': {
+            name: 'Tucop Integrated School',
+            distanceFromNearestFault: 'Approximately 42 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 71.4 km',
+            numberOfBuildings: 7,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 1 },
+                { type: 'Moderately Susceptible', count: 1 },
+                { type: 'Low Susceptible', count: 5 }
+            ],
+            image: './iimg/schools/Tucop IS-Model.png'
+        },
+
     };
 
     const location = schoolCoordinates[schoolName];
@@ -403,7 +471,7 @@ function locateSchool(schoolName) {
         let contentString = `
             <h2>${details.name}</h2>
             <span class="close-btn" onclick="closeCard()">&#10006;</span>
-            <button id="printBtn" class="print-btn" style="display: none;" onclick="printCard()">Print</button>
+            <img src="${details.image}" alt="${details.name}" style="width:100%; height:auto; margin-bottom:10px;">
             <table>
                 <tr>
                     <th colspan="2">General Information</th>
@@ -428,15 +496,8 @@ function locateSchool(schoolName) {
                     <td>${level.type} Buildings</td>
                     <td>${level.count}</td>
                 </tr>`).join('')}
-                <tr>
-                    <th colspan="2">Buildings</th>
-                </tr>
-                ${details.buildings.map(building => `
-                <tr>
-                    <td>${building.id}</td>
-                    <td>RVS: ${building.rvs} - ${building.hazardLevel}</td>
-                </tr>`).join('')}
             </table>
+            <button id="printBtn" class="print-btn" style="display: none;" onclick="printCard()">VIEW COMPLETE ASSESSMENT REPORT</button>
         `;
 
         const schoolDetailsElement = document.getElementById('schoolDetails');
@@ -459,7 +520,7 @@ function closeCard() {
         }
     }
 
-    // Reset the map view to the initial view
+   // Reset the map view to the initial view
     map.setView(initialMapView, initialZoomLevel);
 
     // Hide the card
@@ -474,6 +535,7 @@ function printCard() {
     // Create a new window to print the content
     const printWindow = window.open('', '_blank');
     printWindow.document.write('<html><head><title>School Details</title>');
+    printWindow.document.write('<style>@media print {.close-btn, .print-btn {display: none;}}</style>');
     printWindow.document.write('</head><body>');
     printWindow.document.write(tableContent);
     printWindow.document.write('</body></html>');

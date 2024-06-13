@@ -10,6 +10,10 @@ body {
   margin: 10px;
 }
 
+.navbar {
+  padding: 0 !important;
+}
+
 #map {
   height: 700px;
   margin: auto 20px;
@@ -23,7 +27,7 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
-  width: 300px;
+  width: 700px;
   z-index: 1000 !important;
 }
 
@@ -49,6 +53,7 @@ body {
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .print-btn:hover {
@@ -80,4 +85,196 @@ table tr:nth-child(even) {
 
 table tr:hover {
   background-color: #f1f1f1;
+}
+
+@media print {
+  .close-btn, .print-btn {
+    display: none;
+  }
+}
+
+.intro {
+  position: relative;
+}
+
+.intro > img {
+  background-size: auto;
+  width: 100%;
+  height: auto;
+  opacity: 50%;
+}
+
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column; /* Change to column to stack items vertically */
+  align-items: center;
+  text-align: center;
+}
+
+.container .pic {
+  margin-bottom: 20px; /* Space between pic and phrase */
+}
+
+.container .pic img {
+  width: 300px;
+  height: auto;
+}
+
+.container .phrase {
+  color: black;
+  text-align: center; /* Center align the text */
+  margin-bottom: 20px; /* Add space between text and button */
+}
+
+.container .phrase h1,
+.container .phrase h2 {
+  margin: 0;
+  padding: 0;
+  color: #011A60;
+}
+
+.container .button-container {
+  margin-top: 40px; /* Adjust margin to move the button lower */
+}
+
+.container .button-container p {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #011A60;
+}
+
+.container a {
+  border: 1px solid #000;
+  border-radius: 20px;
+  padding: 10px 20px; /* Adjust padding for better appearance */
+  text-decoration: none;
+  color: #f1f1f1;
+  background-color: #031A60;
+}
+
+.bpsu {
+  width: auto;
+  margin-top: 40px;
+}
+
+.bpsu img {
+  width: 40%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.bpsu p {
+  font-size: 20px;
+  color: #011A60;
+}
+
+
+
+
+
+
+/* About */
+
+
+.civ-stud .content {
+  width: 100%;
+  height: auto;
+}
+
+.civ-stud .content2 > img {
+  width: 100%;
+  height: auto;
+}
+
+.civ-stud .content1 > p {
+  width: 700px;
+  height: auto;
+}
+
+.civ-stud .content1 {
+  padding: 20px;
+  font-size: 25px;
+  background-color: #031A60;
+  color: #ffffff;
+  
+}
+
+.banner1 img {
+  width: 100px;
+  height: auto;
+}
+
+.miss {
+  background-color: #031A60;
+}
+
+.vis {
+  background-color: #F49E22;
+}
+
+.miss, .vis {
+  color: #fff;
+  font-size: 25px;
+}
+
+.miss > h2, .vis > h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.banner1, .banner2 {
+  color: #011A60;
+}
+
+.banner2 h1 {
+  background-color: #F49E22;
+  padding: 20px;
+}
+
+.civ-img {
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.civ-img img {
+  border-radius: 50%;
+  height: 260px;
+  width: 270px;
+  object-fit: cover;
+}
+
+.civ-name {
+  gap: 140px;
+  margin-bottom: 50px;
+}
+
+.civ-name .caption {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center; /* Center the text inside the caption */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #011A60;
+}
+
+.civ-name .caption p {
+  margin-bottom: 0;
+  padding: 5px 10px 5px 10px;
+  color: #fff;
+}
+
+.mis {
+  border-radius: 20px;
+  background-color: #011A60;
+  color: #fff;
+  font-size: 25px;
 }
