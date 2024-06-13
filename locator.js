@@ -47,6 +47,12 @@ function initMap() {
         'Tucop Integrated School': [14.897273, 120.472482],
         'Tubo-Tubo Integrated School': [14.860007, 120.408932],
 
+        'New San Jose Elementary School': [14.880649, 120.461971],
+        'Old San Jose Elementary School': [14.889545, 120.462558],
+        'Pagalanggang Elementary School': [14.893225, 120.467278],
+        'Pita Elementary School': [14.893784, 120.439846],
+        'Roosevelt Elementary School': [14.846650, 120.360735],
+
 
     };
 
@@ -97,6 +103,12 @@ function locateSchool(schoolName) {
         'Santo Nino Elementary School': [14.876524, 120.458879],
         'Tucop Integrated School': [14.897273, 120.472482],
         'Tubo-Tubo Integrated School': [14.860007, 120.408932],
+
+        'New San Jose Elementary School': [14.880649, 120.461971],
+        'Old San Jose Elementary School': [14.889545, 120.462558],
+        'Pagalanggang Elementary School': [14.893225, 120.467278],
+        'Pita Elementary School': [14.893784, 120.439846],
+        'Roosevelt Elementary School': [14.846650, 120.360735],
     };
 
     const schoolDetails = {
@@ -457,6 +469,68 @@ function locateSchool(schoolName) {
                 { type: 'Low Susceptible', count: 5 }
             ],
             image: './iimg/schools/Tucop IS-Model.png'
+        },
+
+
+        'New San Jose Elementary School': {
+            name: 'New San Jose Elementary School',
+            distanceFromNearestFault: 'Approximately 42.7 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 71.8 km',
+            numberOfBuildings: 6,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 3 },
+                { type: 'Moderately Susceptible', count: 2 },
+                { type: 'Low Susceptible', count: 1 }
+            ],
+            image: './iimg/schools/New San Jose ES-Model.png'
+        },
+        'Old San Jose Elementary School': {
+            name: 'Old San Jose Elementary School',
+            distanceFromNearestFault: 'Approximately 41.9 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 72.1 km',
+            numberOfBuildings: 5,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 4 },
+                { type: 'Moderately Susceptible', count: 1 },
+                { type: 'Low Susceptible', count: 0 }
+            ],
+            image: './iimg/schools/Old San Jose ES-Model.png'
+        },
+        'Pagalanggang Elementary School': {
+            name: 'Pagalanggang Elementary School',
+            distanceFromNearestFault: 'Approximately 41.9 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 71.8 km',
+            numberOfBuildings: 7,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 0 },
+                { type: 'Moderately Susceptible', count: 6 },
+                { type: 'Low Susceptible', count: 1 }
+            ],
+            image: './iimg/schools/Paggalanggang ES-Model.png'
+        },
+        'Pita Elementary School': {
+            name: 'Pita Elementary School',
+            distanceFromNearestFault: 'Approximately 40 km south of the Iba Fault',
+            distanceFromWestValley: 'Approximately 74.6 km',
+            numberOfBuildings: 5,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 4 },
+                { type: 'Moderately Susceptible', count: 1 },
+                { type: 'Low Susceptible', count: 0 }
+            ],
+            image: './iimg/schools/Pita ES-Model.png'
+        },
+        'Roosevelt Elementary School': {
+            name: 'Roosevelt Elementary School',
+            distanceFromNearestFault: 'Approximately 40.6 km south of the Iba Fault',
+            distanceFromWestValley: 'Approximately 80.8 km',
+            numberOfBuildings: 7,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 4 },
+                { type: 'Moderately Susceptible', count: 3 },
+                { type: 'Low Susceptible', count: 0 }
+            ],
+            image: './iimg/schools/Roosevelt ES-Model.png'
         },
 
     };
