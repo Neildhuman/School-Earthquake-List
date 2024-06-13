@@ -136,7 +136,18 @@ function locateSchool(schoolName) {
             ],
             image: './iimg/schools/Saguing ES-Model.png'
         },
-        'San Ramon Elementary School': { /* Add relevant details */ },
+        'San Ramon Elementary School': { 
+            name: 'San Ramon Elementary School',
+            distanceFromNearestFault: 'Approximately 43.7 km southeast of the Iba Fault',
+            distanceFromWestValley: 'Approximately 71.3 km',
+            numberOfBuildings: 11,
+            vulnerabilityLevels: [
+                { type: 'Highly Susceptible', count: 0 },
+                { type: 'Moderately Susceptible', count: 6 },
+                { type: 'Low Susceptible', count: 5 }
+            ],
+            image: './iimg/schools/San Ramon ES-Model.png'
+        },
         'Dinalupihan Elementary School': { 
             name: 'Dinalupihan Elementary School',
             distanceFromNearestFault: 'Approximately 44.2 km southeast of the Iba Fault',
@@ -281,8 +292,8 @@ function locateSchool(schoolName) {
             ],
             image: './iimg/schools/Naparing ES-Model.png'
         },
-        'Pag-asa Elementary School': {
-            name: 'Pag-asa Elementary School',
+        'Pag-Asa Elementary School': {
+            name: 'Pag-Asa Elementary School',
             distanceFromNearestFault: 'Approximately 42.6 km southeast of the Iba Fault',
             distanceFromWestValley: 'Approximately 74.9 km',
             numberOfBuildings: 6,
