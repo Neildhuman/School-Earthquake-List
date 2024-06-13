@@ -326,7 +326,7 @@ function locateSchool(schoolName) {
                 { type: 'Moderately Susceptible', count: 1 },
                 { type: 'Low Susceptible', count: 1 }
             ],
-            image: './iimg/schools/Bangal ES-Model.png'
+            image: './iimg/schools/Pentor ES-Model.png'
         },
         'Pinulot Elementary School': {
             name: 'Pinulot Elementary School',
