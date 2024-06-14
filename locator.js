@@ -115,12 +115,12 @@ function locateSchool(schoolName) {
         'Kataasan Elementary School': {
             name: 'Kataasan Elementary School',
             distanceFromNearestFault: 'Approximately 43.5 km southeast of the Iba Fault',
-            distanceFromWestValley: 'Approximately 71.3 KM',
-            numberOfBuildings: 20,
+            distanceFromWestValley: 'Approximately 71.3 km',
+            numberOfBuildings: 2,
             vulnerabilityLevels: [
-                { type: 'Highly Susceptible', count: 15 },
-                { type: 'Moderately Susceptible', count: 2 },
-                { type: 'Low Susceptible', count: 3 }
+                { type: 'Highly Susceptible', count: 0 },
+                { type: 'Moderately Susceptible', count: 0 },
+                { type: 'Low Susceptible', count: 2 }
             ],
             image: './iimg/schools/Kataasan ES-Model.png'
         },
@@ -128,11 +128,11 @@ function locateSchool(schoolName) {
             name: 'Luacan Elementary School',
             distanceFromNearestFault: 'Approximately 43.2 km southeast of the Iba Fault',
             distanceFromWestValley: 'Approximately 72.5 km',
-            numberOfBuildings: 20,
+            numberOfBuildings: 6,
             vulnerabilityLevels: [
-                { type: 'Highly Susceptible', count: 15 },
-                { type: 'Moderately Susceptible', count: 2 },
-                { type: 'Low Susceptible', count: 3 }
+                { type: 'Highly Susceptible', count: 4 },
+                { type: 'Moderately Susceptible', count: 1 },
+                { type: 'Low Susceptible', count: 1 }
             ],
             image: './iimg/schools/Luacan or Luakan ES-Model.png'
         },
@@ -140,10 +140,10 @@ function locateSchool(schoolName) {
             name: 'Saguing Elementary School',
             distanceFromNearestFault: 'Approximately 43.1 km southeast of the Iba Fault',
             distanceFromWestValley: 'Approximately 73.2 km',
-            numberOfBuildings: 7,
+            numberOfBuildings: 8,
             vulnerabilityLevels: [
                 { type: 'Highly Susceptible', count: 1 },
-                { type: 'Moderately Susceptible', count: 0 },
+                { type: 'Moderately Susceptible', count: 1 },
                 { type: 'Low Susceptible', count: 6 }
             ],
             image: './iimg/schools/Saguing ES-Model.png'
@@ -197,7 +197,7 @@ function locateSchool(schoolName) {
             image: './iimg/schools/Happy Valley ES-Model.png'
         },
         'Colo Elementary School': {
-            name: 'Colo Valley Elementary School',
+            name: 'Colo Elementary School',
             distanceFromNearestFault: 'Approximately 42.8 km southeast of the Iba Fault',
             distanceFromWestValley: 'Approximately 75.6 km',
             numberOfBuildings: 9,
@@ -223,12 +223,12 @@ function locateSchool(schoolName) {
         'Magsaysay Elementary School': {
             name: 'Magsaysay Elementary School',
             distanceFromNearestFault: 'Approximately 43.4 km southeast of the Iba Fault',
-            distanceFromWestValley: 'Approximately 74.7 KM',
-            numberOfBuildings: 20,
+            distanceFromWestValley: 'Approximately 74.7 km',
+            numberOfBuildings: 10,
             vulnerabilityLevels: [
-                { type: 'Highly Susceptible', count: 15 },
-                { type: 'Moderately Susceptible', count: 2 },
-                { type: 'Low Susceptible', count: 3 }
+                { type: 'Highly Susceptible', count: 1 },
+                { type: 'Moderately Susceptible', count: 5 },
+                { type: 'Low Susceptible', count: 4 }
             ],
             image: './iimg/schools/Magsaysay ES-Model.png'
         },
@@ -248,10 +248,10 @@ function locateSchool(schoolName) {
             name: 'Daang Bago Elementary School',
             distanceFromNearestFault: 'Approximately 45.9 km southeast of the Iba Fault',
             distanceFromWestValley: 'Approximately 69.1 km',
-            numberOfBuildings: 20,
+            numberOfBuildings: 5,
             vulnerabilityLevels: [
-                { type: 'Highly Susceptible', count: 15 },
-                { type: 'Moderately Susceptible', count: 2 },
+                { type: 'Highly Susceptible', count: 1 },
+                { type: 'Moderately Susceptible', count: 1 },
                 { type: 'Low Susceptible', count: 3 }
             ],
             image: './iimg/schools/Daang Bago ES-Model.png'
@@ -272,10 +272,10 @@ function locateSchool(schoolName) {
             name: 'Bangal Elementary School',
             distanceFromNearestFault: 'Approximately 40 km south of the Iba Fault',
             distanceFromWestValley: 'Approximately 82.9 km',
-            numberOfBuildings: 20,
+            numberOfBuildings: 8,
             vulnerabilityLevels: [
-                { type: 'Highly Susceptible', count: 15 },
-                { type: 'Moderately Susceptible', count: 2 },
+                { type: 'Highly Susceptible', count: 2 },
+                { type: 'Moderately Susceptible', count: 3 },
                 { type: 'Low Susceptible', count: 3 }
             ],
             image: './iimg/schools/Bangal ES-Model.png'
@@ -426,7 +426,7 @@ function locateSchool(schoolName) {
             name: 'Santa Isabel Elementary School',
             distanceFromNearestFault: 'Approximately 45.1 km southeast of the Iba Fault',
             distanceFromWestValley: 'Approximately 70 km',
-            numberOfBuildings: 5,
+            numberOfBuildings: 7,
             vulnerabilityLevels: [
                 { type: 'Highly Susceptible', count: 0 },
                 { type: 'Moderately Susceptible', count: 5 },
@@ -559,7 +559,7 @@ function locateSchool(schoolName) {
             <img src="${details.image}" alt="${details.name}" style="width:100%; height:auto; margin-bottom:10px;">
             <table>
                 <tr>
-                    <th colspan="2">General Information</th>
+                    <th colspan="2" style="text-align: center;">General Information</th>
                 </tr>
                 <tr>
                     <td>Distance from Nearest Fault</td>
@@ -574,7 +574,7 @@ function locateSchool(schoolName) {
                     <td>${details.numberOfBuildings}</td>
                 </tr>
                 <tr>
-                    <th colspan="2">Vulnerability Levels</th>
+                    <th colspan="2" style="text-align: center;">Vulnerability Levels</th>
                 </tr>
                 ${details.vulnerabilityLevels.map(level => `
                 <tr>
@@ -582,7 +582,7 @@ function locateSchool(schoolName) {
                     <td>${level.count}</td>
                 </tr>`).join('')}
             </table>
-            <button id="printBtn" class="print-btn" style="display: none;" onclick="printCard()">VIEW COMPLETE ASSESSMENT REPORT</button>
+            <button id="printBtn" class="print-btn" style="display: none; margin: 20px auto;" onclick="printCard()">VIEW COMPLETE ASSESSMENT REPORT</button>
         `;
 
         const schoolDetailsElement = document.getElementById('schoolDetails');
